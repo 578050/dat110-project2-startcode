@@ -22,7 +22,7 @@ public class TemperatureDevice {
 		// - publish the temperature(s)
 		if(connected) {
 			
-			for(int i = 0; i > COUNT; i++) {
+			for(int i = 0; i < COUNT; i++) {
 				
 				//client.publish(Common.TEMPTOPIC, sn.toString());
 				client.publish(Common.TEMPTOPIC, Integer.toString(sn.read()));
